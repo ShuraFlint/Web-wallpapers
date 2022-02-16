@@ -1,0 +1,260 @@
+.oswald {
+	font-family: 'Oswald', sans-serif;
+}
+
+.zentaiges{
+  font-family: 'Zentaiges';
+}
+
+.azuki {
+	font-family: "Azuki";
+}
+
+.mainWrapper {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 100%;
+	height: 100%;
+	transform: translate(-50%, -50%) scale(1.2);
+	filter: blur(3px);
+    box-shadow: inset 0px 0px 100px 60px black;
+	opacity: .8;
+}
+
+.bgImage {
+	background-size: cover;
+}
+
+body {
+	margin: 0;
+	overflow: hidden;
+	background: black;
+}
+
+.squares {
+	position: absolute;
+	width: 20vw;
+	height: 20vw;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: light rgb(255,218,185) solid 2px;
+	border-radius: 2%;
+	background: rgba(12, 12, 12, .3);
+	filter: invert(.1)
+}
+
+.clockBox {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 30vw;
+	height: 30vw;
+	transform: translate(-50%, -50%);
+}
+
+.square1 {
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.square2 {
+	transform: translate(-50%, -50%) rotate(165deg);
+}
+
+.square3 {
+	transform: translate(-50%, -50%) rotate(285deg);
+}
+
+
+
+.timeBox {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: auto;
+	height: auto;
+	
+}
+
+.timeStatus {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	color: rgb(255,218,185);
+	font-size: 4vw;
+	letter-spacing: 15px;
+	display: none;
+}
+
+.seconds {
+	font-size: 1.5vw
+}
+
+.opacity {
+	opacity: .5
+}
+
+.secondArrow {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: .25vw;
+	height: 10vw;
+	margin-left: -.25vw;
+	margin-top: -10vw;
+	transform-origin: 50% 100%;
+	transition: all 600ms cubic-bezier(0.575, 0.505, 0.070, 0.995);
+	background: linear-gradient(rgb(255,192,203)0%, rgb(255,218,185)100%);
+	border-radius: 2px;
+}
+
+.minuteArrow {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: .25vw;
+	height: 8.333vw;
+	margin-left: -.25vw;
+	margin-top: -8.333vw;
+	transform-origin: 50% 100%;
+	transition: all 1200ms cubic-bezier(0.575, 0.505, 0.070, 0.995);
+	background: linear-gradient(rgb(255,192,203)0%, rgb(255,218,185)100%);
+	border-radius: 2px;
+}
+
+.hourArrow {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: .25vw;
+	height: 5.555vw;
+	margin-left: -.25vw;
+	margin-top: -5.555vw;
+	transform-origin: 50% 100%;
+	transition: all 1800ms cubic-bezier(0.575, 0.505, 0.070, 0.995);
+	background: linear-gradient(rgb(255,192,203)0%, rgb(255,218,185)100%);
+	border-radius: 2px;
+}
+
+.hourPoint {
+	position: absolute;
+	left: 100%;
+	top: 0;
+	width: .25vw;
+	height: 10px;
+	border-radius: 2px;
+	background: linear-gradient(rgb(255,192,203)0%, rgb(255,218,185)100%);
+	transform: rotate(45deg) translate(-120%, -50%)
+}
+
+.pointContainer {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 15vw;
+	height: 15vw;/*
+	background: rgba(0, 150, 150, 0.5);*/
+}
+
+.pointContainer01 {
+	transform: rotate(0deg);
+}
+
+.pointContainer02 {
+	transform: rotate(30deg);
+}
+
+.pointContainer03 {
+	transform: rotate(60deg);
+}
+
+.pointContainer04 {
+	transform: rotate(90deg);
+}
+
+.pointContainer05 {
+	transform: rotate(120deg);
+}
+
+.pointContainer06 {
+	transform: rotate(150deg);
+}
+
+.pointContainer07 {
+	transform: rotate(180deg);
+}
+
+.pointContainer08 {
+	transform: rotate(210deg);
+}
+
+.pointContainer09 {
+	transform: rotate(240deg);
+}
+
+.pointContainer10 {
+	transform: rotate(270deg);
+}
+
+.pointContainer11 {
+	transform: rotate(300deg);
+}
+
+.pointContainer12 {
+	transform: rotate(330deg);
+}
+
+.hourPoints {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%) rotate(15deg);
+	width: 15vw;
+	height: 15vw;
+}
+
+.dateData {
+	position: absolute;
+	left: 1vw;
+	top: 0;
+	width: auto;
+	height: auto; background: -webkit-radial-gradient(bottom right, rgba(255,218,185,.75) 50%, rgba(255,192,203,.75) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-family: "Blogger Sans";/**/
+}
+
+.dayName {
+	font-size: 7vw;
+}
+
+.dayNumMonth {
+	font-size: 3.5vw;
+	margin-top: -1vw;
+}
+
+.year {
+	font-size: 3vw;
+	margin-top: -1vw; 
+}
+
+#particles-js {
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+}
+
+
+.background {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}

@@ -1,0 +1,22 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "\"Sakura\" color palette Clock. Made by Bynariiz using html, css and javaScript(JQuery)",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.8862745098039215 0.5333333333333333 0.9254901960784314"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Relaxing" ],
+	"title" : "Pink Clock V1",
+	"type" : "web"
+}
