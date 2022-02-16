@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Test1</title>
+    <link rel="stylesheet" type="text/css" href = "main.css">
+</head>
+<body>
+    <div class = "container">
+        <div class = "box">
+            <div class = "withbox"></div>
+            <div class = "clock"></div>
+            <div class="watch">
+                <ul class="num num1"><span>1</span></ul>
+                <ul class="num num2"><span>2</span></ul>
+                <ul class="num num3"><span>3</span></ul>
+                <ul class="num num4"><span>4</span></ul>
+                <ul class="num num5"><span>5</span></ul>
+                <ul class="num num6"><span>6</span></ul>
+                <ul class="num num7"><span>7</span></ul>
+                <ul class="num num8"><span>8</span></ul>
+                <ul class="num num9"><span>9</span></ul>
+                <ul class="num num10"><span>10</span></ul>
+                <ul class="num num11"><span>11</span></ul>
+                <ul class="num num12"><span>12</span></ul>
+            </div>
+            <div class="pointer">
+                <div class="hour-pointer" id = "H"></div>
+                <div class="min-pointer" id = "M"></div>
+                <div class="sec-pointer" id = "S"></div>
+            </div>
+        </div>
+    </div>
+    <div class="time"></div>
+    <script type="text/javascript">
+        window.onload=function(){
+          setInterval(function(){
+            var dt = new Date();
+            var sec_deg = (dt.getSeconds() * (360/60)) % 360 - 90;
+            var min_deg = (dt.getMinutes() * (360/60) + sec_deg * (1/60)) % 360 - 90 ;
+            var hr_deg = (dt.getHours() * (360/12) + dt.getMinutes() * (360/60/12)) % 360 - 90;
+            document.querySelector(".sec-pointer").style.cssText='-webkit-transform:rotate(' + sec_deg + 'deg)','-moz-transform:rotate(' + sec_deg + 'deg)', '-o-transform:rotate(' + sec_deg + 'deg)', '-ms-transform:rotate(' + sec_deg + 'deg)', 'transform:rotate(' + sec_deg + 'deg)';
+            document.querySelector('.min-pointer').style.cssText='-webkit-transform:rotate(' + min_deg + 'deg)', '-moz-transform:rotate(' + min_deg + 'deg)', '-o-transform:rotate(' + min_deg + 'deg)', '-ms-transform:rotate(' + min_deg + 'deg)', 'transform:rotate(' + min_deg + 'deg)';
+            document.querySelector('.hour-pointer').style.cssText='-webkit-transform:rotate(' + hr_deg + 'deg)', '-moz-transform:rotate(' + hr_deg + 'deg)', '-o-transform:rotate(' + hr_deg + 'deg)', '-ms-transform:rotate(' + hr_deg + 'deg)', 'transform:rotate(' + hr_deg + 'deg)';
+           }, 10);
+          }
+      </script>
+</body>
+</html>
