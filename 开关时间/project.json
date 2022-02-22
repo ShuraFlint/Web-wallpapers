@@ -1,0 +1,25 @@
+{
+	"description" : "html5 制作的闹钟， 想要替换背景的音乐的只需要替换目录下的ticktac.mp3与ticktac.ogg文件",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "1 1 1"
+			}
+		}
+	},
+	"monetization" : false,
+	"preview" : "preview.jpg",
+	"tags" : [ "Unspecified" ],
+	"title" : "开关表盘",
+	"type" : "web",
+	"version" : 0,
+	"visibility" : "public",
+	"workshopid" : 831600979
+}
